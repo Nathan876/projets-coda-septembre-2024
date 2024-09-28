@@ -18,23 +18,40 @@ int main()
  scanf("%d", &second_nombre);
  if (signe == '+')
  {
-  printf("addition\n");
+  int resultat = premier_nombre + second_nombre;
  }
  else if (signe == '-')
  {
-  printf("soustraction\n");
+  int resultat = premier_nombre - second_nombre;
  }
  else if (signe == '*')
  {
-  printf("multiplication\n");
+  int resultat = premier_nombre * second_nombre;
  }
  else if (signe == '/')
  {
-  printf("division\n");
- }
+  if (second_nombre == 0)
+  {
+   printf("La division par 0 est impossible\n");
+   return 0;
+  }
+  else
+  {
+   double resultat = (double)premier_nombre / (double)second_nombre;
+  }
+ } 
  else if (signe == '%')
  {
-  printf("modulo\n");
+  if (second_nombre == 0)
+  {
+   printf("La division par 0 est impossible");
+   return 0;
+  }
+  else
+  {
+   int resultat = premier_nombre % second_nombre;
+   return 0;
+  }
  }
  else
  {
