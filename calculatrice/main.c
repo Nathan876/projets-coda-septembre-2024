@@ -3,6 +3,8 @@
 
 int main()
 {
- printf("Hello world!");
+ int premier_nombre;
+ int second_nombre;
+ char signe;
  return 0;
 }
